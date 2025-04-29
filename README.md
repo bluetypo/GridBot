@@ -43,6 +43,7 @@ Facilita la **organización visual** y la **disposición estructurada** de eleme
 A continuación, una muestra de retículas generadas por GridBot:
 
 ![Vista previa de GridBot](assets/gridbot001.png)
+![Retículas de GridBot](assets/gridbot002.png)
 
 ---
 
