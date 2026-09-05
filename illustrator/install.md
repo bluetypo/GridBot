@@ -4,7 +4,7 @@ Este documento detalla las opciones para utilizar el script `GridBot.jsx` en **m
 
 ---
 
-## 🚀 Método 1: Ejecución Rápida (Sin instalación)
+## Método 1: Ejecución Rápida (Sin instalación)
 
 Si solo deseas probar el script o usarlo ocasionalmente sin necesidad de reiniciar Illustrator:
 
@@ -19,11 +19,11 @@ Si solo deseas probar el script o usarlo ocasionalmente sin necesidad de reinici
 
 ---
 
-## 📌 Método 2: Instalación Permanente (En el menú de Illustrator)
+## Método 2: Instalación Permanente (En el menú de Illustrator)
 
 Al instalarlo de forma permanente, **GridBot** aparecerá directamente en el menú de scripts de Illustrator cada vez que abras el programa.
 
-### 🍏 En macOS
+### En macOS
 
 1. Cierra **Adobe Illustrator** si lo tienes abierto.
 2. Copia el archivo `GridBot.jsx`.
@@ -41,7 +41,7 @@ Al instalarlo de forma permanente, **GridBot** aparecerá directamente en el men
 
 ---
 
-### 🪟 En Windows
+### En Windows
 
 1. Cierra **Adobe Illustrator** si lo tienes abierto.
 2. Copia el archivo `GridBot.jsx`.
@@ -59,7 +59,7 @@ Al instalarlo de forma permanente, **GridBot** aparecerá directamente en el men
 
 ---
 
-## 💡 Consejos de Uso
+## Consejos de Uso
 
 - **Documento activo:** Asegúrate de tener un documento con al menos una mesa de trabajo (*artboard*) abierta antes de lanzar el script.
 - **Capas:** El script generará los elementos vectoriales en la mesa de trabajo activa. Puedes organizar la retícula en una capa dedicada para manipularla con facilidad.
