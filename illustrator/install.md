@@ -63,3 +63,5 @@ Al instalarlo de forma permanente, **GridBot** aparecerá directamente en el men
 
 - **Documento activo:** Asegúrate de tener un documento con al menos una mesa de trabajo (*artboard*) abierta antes de lanzar el script.
 - **Capas:** El script generará los elementos vectoriales en la mesa de trabajo activa. Puedes organizar la retícula en una capa dedicada para manipularla con facilidad.
+
+![GridBot en Adobe Illustrator](../assets/gridbot-ai.png)

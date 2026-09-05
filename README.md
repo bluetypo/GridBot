@@ -36,7 +36,7 @@ GridBot/
 ├── illustrator/
 │   ├── GridBot.jsx             # Script para Adobe Illustrator (ExtendScript)
 │   └── install.md              # Guía de instalación (macOS y Windows)
-├── assets/                     # Muestras y capturas de ejemplo
+├── assets/                     # Muestras 
 ├── README.md                   # Documentación
 └── LICENSE                     # Licencia CC0 1.0
 ```
@@ -50,10 +50,14 @@ GridBot/
 2. Ejecuta el sketch.
 3. Haz **click** en el lienzo para generar una nueva retícula y exportar el `.pdf`.
 
+![GridBot para Processing](assets/gridbot001.png)
+
 ### Opción 2: Adobe Illustrator
 1. Abre tu documento en **Adobe Illustrator**.
 2. Ve al menú **Archivo > Secuencias de comandos > Otra secuencia de comandos...** (`Cmd + F12` en macOS / `Ctrl + F12` en Windows) y selecciona `illustrator/GridBot.jsx`.
 3. *(Opcional)* Para integrarlo en el menú de Illustrator de forma permanente, consulta la [Guía de Instalación para macOS y Windows](illustrator/install.md).
+
+![GridBot para Adobe Illustrator](assets/gridbot-ai.png)
 
 ---
 
