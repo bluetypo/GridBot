@@ -10,6 +10,11 @@ Esta herramienta resulta especialmente útil en proyectos de:
 
 Facilita la **organización visual** y la **disposición estructurada** de elementos, optimizando la composición gráfica en diversos contextos de diseño.
 
+Este script surge como material y recurso didáctico del curso de Domestika:  
+👉 [**Diseño de carteles tipográficos experimentales**](https://www.domestika.org/es/courses/464-diseno-de-carteles-tipograficos-experimentales)
+
+[![Diseño de carteles tipográficos experimentales en Domestika](assets/domestika-curso.jpg)](https://www.domestika.org/es/courses/464-diseno-de-carteles-tipograficos-experimentales)
+
 ---
 
 ## Características principales
@@ -21,41 +26,41 @@ Facilita la **organización visual** y la **disposición estructurada** de eleme
 
 ---
 
+## Estructura del repositorio
+
+```text
+GridBot/
+├── processing/
+│   └── GridBot/
+│       └── GridBot.pde         # Versión para Processing
+├── illustrator/
+│   ├── GridBot.jsx             # Script para Adobe Illustrator (ExtendScript)
+│   └── install.md              # Guía de instalación (macOS y Windows)
+├── assets/                     # Muestras y capturas de ejemplo
+├── README.md                   # Documentación
+└── LICENSE                     # Licencia CC0 1.0
+```
+
+---
+
 ## Uso
 
-1. Abre el archivo `GridBot.pde` en el entorno de **Processing**.
+### 🎨 Opción 1: Processing
+1. Abre el archivo `processing/GridBot/GridBot.pde` en **Processing**.
 2. Ejecuta el sketch (`▶️ Run`).
-3. Haz **click** en cualquier parte del lienzo para:
-   - Generar una **nueva retícula** aleatoria.
-   - **Exportar** automáticamente un archivo **.pdf** en la carpeta del proyecto (`/data/` o raíz del sketch, dependiendo de la configuración).
+3. Haz **click** en el lienzo para generar una nueva retícula y exportar el `.pdf`.
+
+### ✒️ Opción 2: Adobe Illustrator
+1. Abre tu documento en **Adobe Illustrator**.
+2. Ve al menú **Archivo > Secuencias de comandos > Otra secuencia de comandos...** (`Cmd + F12` en macOS / `Ctrl + F12` en Windows) y selecciona `illustrator/GridBot.jsx`.
+3. *(Opcional)* Para integrarlo en el menú de Illustrator de forma permanente, consulta la [Guía de Instalación para macOS y Windows](illustrator/install.md).
 
 ---
 
 ## Requisitos
 
-- **Processing** (versión 3.0 o superior recomendada).
-- Librerías estándar de Processing (no requiere instalaciones adicionales).
-
----
-
-## Muestra
-
-A continuación, una muestra de retículas generadas por GridBot:
-
-<img src="assets/gridbot001.png" alt="Vista previa de GridBot" width="450">
-<img src="assets/gridbot002.png" alt="Retículas de GridBot">
-
----
-
-## Instalación
-
-Si deseas usar GridBot en tu propio proyecto:
-
-```bash
-1. Clona o descarga este repositorio.
-2. Abre el archivo GridBot.pde en Processing.
-3. Ejecuta y comienza a generar retículas.
-```
+- **Processing**: Versión 3.0 o superior (para el sketch `.pde`).
+- **Adobe Illustrator**: Compatible con cualquier versión con soporte ExtendScript/JSX.
 
 ---
 
