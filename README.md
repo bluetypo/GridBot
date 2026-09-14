@@ -1,6 +1,6 @@
 # GridBot
 
-**GridBot** es un sencillo pero potente script desarrollado por **Manuel Guerrero** para **Processing**.  
+**GridBot** es un sencillo script desarrollado por **Manuel Guerrero** inicialmente creado para **Processing**.  
 Su objetivo principal es generar **retículas dinámicas** mediante la **descomposición geométrica** de un rectángulo.  
 Esta herramienta resulta especialmente útil en proyectos de:
 
