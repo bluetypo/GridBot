@@ -20,9 +20,14 @@ Este documento explica cómo utilizar `GridBot.js` en **Affinity Designer**, **A
    - **Inglés:** `Window > Scripting > Script Editor`
    - **Español:** `Ventana > Scripting > Script Editor`
 3. En el panel **Script Editor**, haz clic en **New Script**.
-4. **Pega el contenido completo** de [`affinity/GridBot.js`](GridBot.js) en el área de texto.
-5. Haz clic en **Run** (o `Cmd + Enter` en macOS / `Ctrl + Enter` en Windows).
-6. Aparecerá el diálogo de GridBot con los parámetros configurables.
+4. Abre el archivo `affinity/GridBot.js` en cualquier editor de texto:
+   - **macOS:** clic derecho sobre el archivo → *Abrir con* → **TextEdit** (o cualquier editor de código)
+   - **Windows:** clic derecho → *Abrir con* → **Notepad** (o cualquier editor de código)
+5. Selecciona todo el contenido (`Cmd + A` / `Ctrl + A`), cópialo (`Cmd + C` / `Ctrl + C`).
+6. Pega el código en el **Script Editor** de Affinity (`Cmd + V` / `Ctrl + V`).
+7. Haz clic en **Run** (o `Cmd + Enter` en macOS / `Ctrl + Enter` en Windows).
+8. Aparecerá el diálogo de GridBot con los parámetros configurables.
+
 
 ---
 
