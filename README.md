@@ -111,7 +111,7 @@ Esto significa que puedes copiar, modificar, distribuir y ejecutar el proyecto, 
 
 ## Créditos
 
-Desarrollado por [**Manuel Guerrero**](https://github.com/bluetypo)  
+Desarrollado por [**BlueTypo**](https://github.com/bluetypo)  
 Para cualquier comentario, sugerencia o mejora, se aceptan *pull requests* y *issues*.
 
 ---
