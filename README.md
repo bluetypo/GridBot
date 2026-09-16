@@ -58,7 +58,7 @@ GridBot/
 2. Ejecuta el sketch.
 3. Haz **click** en el lienzo para generar una nueva retícula y exportar el `.pdf`.
 
-![GridBot para Processing](assets/gridbot001.png)
+![GridBot para Processing](assets/gridbot-p.png)
 
 ### Opción 2: Adobe Illustrator
 1. Abre tu documento en **Adobe Illustrator**.
