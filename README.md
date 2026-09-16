@@ -68,11 +68,11 @@ GridBot/
 ![GridBot para Adobe Illustrator](assets/gridbot-ai.png)
 
 ### Opción 3: Canva Affinity (v3.3+)
-1. Asegúrate de haber iniciado sesión con tu cuenta de Affinity/Canva y haber activado **"Enable Affinity Scripting"** en `Settings > Scripting` (`Cmd + ,` en macOS / `Ctrl + ,` en Windows).
+1. Inicia sesión con tu cuenta de Affinity / Canva *(el Script Editor no está disponible sin sesión activa)*.
 2. Abre tu documento en **Affinity Designer**, **Photo** o **Publisher**.
-3. Abre el **Script Editor** (`Window > Scripting > Script Editor` en inglés / `Ventana > Scripting > Script Editor` en español) o el **Affinity Script Manager**.
-4. Copia y pega el código de `affinity/GridBot.js` en el editor y presiona **Run** (`Cmd + Enter` / `Ctrl + Enter`).
-5. Para más detalles, consulta la [Guía de Instalación para Canva Affinity](affinity/install.md).
+3. Ve a `Window > Scripting > Script Editor`, pega el contenido de `affinity/GridBot.js` y presiona **Run** (`Cmd + Enter` / `Ctrl + Enter`).
+4. *(Opcional)* Para configurar permisos del script (red, archivos, etc.) ve a `Settings > Scripting`. GridBot no requiere permisos especiales.
+5. Para más detalles consulta la [Guía de Instalación para Canva Affinity](affinity/install.md).
 
 ---
 

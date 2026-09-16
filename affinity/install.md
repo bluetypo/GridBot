@@ -1,62 +1,78 @@
-# Cómo instalar y ejecutar GridBot en Canva Affinity (v3.3+)
+# Cómo ejecutar GridBot en Canva Affinity (v3.3+)
 
-Este documento detalla las opciones para utilizar el script `GridBot.js` en **Affinity Designer**, **Affinity Photo** y **Affinity Publisher** (versiones 3.2, 3.3 y superiores) en **macOS** y **Windows**.
-
----
-
-## Requisitos previos y Configuración
-
-1. **Versión de la aplicación:** Canva Affinity Suite (Designer, Photo o Publisher) versión **3.2 o superior**.
-2. **Iniciar sesión:** Debes haber iniciado sesión con tu cuenta de Affinity / Canva (icono de perfil en la esquina superior derecha o en el menú de la aplicación).
-3. **Activar Scripting en Preferencias:**
-   - Ve a **Settings / Preferencias** (`Cmd + ,` en macOS o `Ctrl + ,` en Windows).
-   - Ve a la sección **Scripting**.
-   - Activa la casilla **"Enable Affinity Scripting"**.
-4. **Documento:** Tener un documento abierto (con o sin mesa de trabajo / *artboard*).
+Este documento explica cómo utilizar `GridBot.js` en **Affinity Designer**, **Affinity Photo** y **Affinity Publisher** (v3.3+) en macOS y Windows.
 
 ---
 
-## Método 1: Ejecución desde el Script Editor nativo
+## Requisitos previos
 
-1. Abre tu documento en **Affinity Designer** (o Photo/Publisher).
-2. Ve al menú superior:
-   - **Inglés:** `Window > Scripting > Script Editor`
-   - **Español:** `Ventana > Scripting > Script Editor`
-3. Abre el archivo [`affinity/GridBot.js`](GridBot.js) en tu editor de texto o visor, **copia todo su contenido** y **pégalo** directamente en el área de texto del **Script Editor**.
-4. Haz clic en el botón **Run / Ejecutar** (o presiona el atajo `Cmd + Enter` en macOS / `Ctrl + Enter` en Windows).
-5. La retícula se generará instantáneamente en tu mesa de trabajo o capa activa.
+1. **Versión:** Canva Affinity Suite (Designer, Photo o Publisher) **v3.3 o superior**.
+2. **Iniciar sesión:** Debes estar autenticado con tu cuenta de Affinity / Canva.  
+   *(Sin sesión activa, el Script Editor no está disponible.)*
+3. **Documento abierto:** Tener un documento activo en Affinity antes de ejecutar el script.
 
 ---
 
-## Método 2: Uso con Affinity Script Manager (Recomendado)
+## Configuración de Scripting (`Settings > Scripting`)
 
-Si utilizas la herramienta comunitaria **Affinity Script Manager**:
+Abre las Preferencias (`Cmd + ,` en macOS / `Ctrl + ,` en Windows) y ve a la sección **Scripting**.
 
-1. Abre **Affinity Script Manager**.
-2. Haz clic en **Import / Add Script**.
-3. Selecciona `affinity/GridBot.js`.
-4. Ejecuta el script con un solo clic o asígnale un atajo de teclado personalizado dentro del gestor.
+Desde aquí puedes controlar qué permisos tienen los scripts:
+
+| Opción | Descripción |
+|---|---|
+| **Access networks** | Permite que los scripts accedan a internet |
+| **Use Canva AI Studio features** | Acceso a herramientas de IA de Canva desde scripts |
+| **Allow code generation from strings** | Permite `eval()` y generación dinámica de código |
+| **File System access** | Carpetas a las que los scripts pueden leer/escribir. Usa **Add** para agregar una carpeta |
+
+> GridBot **no requiere** ninguno de estos permisos — funciona sin conexión a red ni acceso al sistema de archivos.
 
 ---
 
-## Parámetros de Personalización
+## Cómo ejecutar el script
 
-Puedes editar los valores iniciales directamente en el encabezado de `affinity/GridBot.js`:
+1. Abre tu documento en Affinity Designer, Photo o Publisher.
+2. Ve al menú:  
+   `Window > Scripting > Script Editor`
+3. En el **Script Editor**, **pega el contenido completo** de `affinity/GridBot.js`.
+4. Haz clic en **Run** (o `Cmd + Enter` en macOS / `Ctrl + Enter` en Windows).
+5. Aparecerá el diálogo de GridBot con los parámetros configurables.
+
+---
+
+## Opciones del diálogo
+
+| Campo | Descripción |
+|---|---|
+| **Columnas / Filas** | Define la retícula base de subdivisión |
+| **Rectángulos** | Número de formas a generar |
+| **Grosor trazo** | Ancho del borde en puntos (pt) |
+| **Aplicar a todas las páginas** | Genera la retícula en cada página/spread del documento |
+| **Facing pages** | Activar si el documento tiene todos los spreads de 2 páginas sin cubierta individual |
+| **Randomize** | Genera una nueva variación aleatoria manteniendo los mismos parámetros |
+
+---
+
+## Valores por defecto
+
+Puedes cambiar los valores iniciales editando `DEFAULT_CONFIG` al inicio de `GridBot.js`:
 
 ```javascript
 const DEFAULT_CONFIG = {
-    cols: 3,             // Número de columnas iniciales
-    rows: 3,             // Número de filas iniciales
-    count: 50,           // Cantidad de rectángulos a generar
-    strokeWidth: 0.35,   // Grosor del trazo en puntos (pt)
-    strokeColor: { r: 0, g: 0, b: 0, a: 255 }, // Color del trazo (Negro RGBA)
-    applyAll: false      // Aplicar a todas las páginas / mesas por defecto (true / false)
+  cols:        5,      // Columnas iniciales
+  rows:        7,      // Filas iniciales
+  count:       10,     // Rectángulos a generar
+  strokeWidth: 0.35,   // Grosor del trazo en pt
+  applyAll:    false,  // Aplicar a todas las páginas
+  facingPages: false   // Override para spreads todos-facing
 };
 ```
 
 ---
 
-## Consejos de Uso
+## Notas
 
-- **Mesas de trabajo (Artboards):** GridBot detecta automáticamente las dimensiones de tu mesa de trabajo o del lienzo global para ajustar las proporciones del reticulado.
-- **Variaciones infinitas:** Cada ejecución genera una disposición matemática única. Puedes ejecutarlo varias veces para superponer capas o explorar nuevas composiciones.
+- **Multi-página / Facing pages:** GridBot detecta automáticamente el ancho de una página individual usando el spread más estrecho del documento como referencia.  
+- **Sin relleno:** Los rectángulos se generan solo con trazo (sin relleno), listo para usar como retícula editorial o de composición.
+- **Deshacer:** Cada ejecución es un comando independiente; puedes deshacerla con `Cmd + Z`.
