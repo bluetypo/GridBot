@@ -13,9 +13,7 @@ Facilita la **organización visual** y la **disposición estructurada** de eleme
 Este script surge como material y recurso didáctico del curso de Domestika:  
 - [**Diseño de carteles tipográficos experimentales**](https://www.domestika.org/es/courses/464-diseno-de-carteles-tipograficos-experimentales)
 
-<img src="assets/domestika-curso.png" pointer-events="none" />
-
-
+![Diseño de carteles tipográficos experimentales en Domestika](assets/domestika-curso.png)
 
 ---
 
@@ -61,14 +59,14 @@ GridBot/
 2. Ejecuta el sketch.
 3. Haz **click** en el lienzo para generar una nueva retícula y exportar el `.pdf`.
 
-<img src="assets/gridbot-p.png" pointer-events="none" />
+![GridBot para Processing](assets/gridbot-p.png)
 
 ### Opción 2: Adobe Illustrator
 1. Abre tu documento en **Adobe Illustrator**.
 2. Ve al menú **Archivo > Secuencias de comandos > Otra secuencia de comandos...** (`Cmd + F12` en macOS / `Ctrl + F12` en Windows) y selecciona `illustrator/GridBot_v0.2.1.jsx`.
 3. *(Opcional)* Para integrarlo en el menú de Illustrator de forma permanente, consulta la [Guía de Instalación para macOS y Windows](illustrator/install.md).
 
-<img src="assets/gridbot-ai.png" pointer-events="none" />
+![GridBot para Adobe Illustrator](assets/gridbot-ai.png)
 
 ### Opción 3: Canva Affinity (v3.3+)
 1. Inicia sesión con tu cuenta de Affinity / Canva *(el Script Editor no está disponible sin sesión activa)*.
