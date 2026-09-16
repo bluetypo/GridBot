@@ -74,6 +74,8 @@ GridBot/
 4. *(Opcional)* Para configurar permisos del script (red, archivos, etc.) ve a `Settings > Scripting`. GridBot no requiere permisos especiales.
 5. Para más detalles consulta la [Guía de Instalación para Canva Affinity](affinity/install.md).
 
+![GridBot para Canva Affinity](assets/gridbot-aff.png)
+
 ---
 
 ## Plantillas PDF
