@@ -17,7 +17,7 @@ Este script surge como material y recurso didáctico del curso de Domestika:
 
 ---
 
-## Características principales
+## Características principales 
 
 - **Generación aleatoria** de retículas a partir de divisiones geométricas.
 - **Exportación automática** en formato **.pdf** para su posterior edición o impresión.
