@@ -29,11 +29,15 @@ Este documento explica cómo utilizar `GridBot.js` en **Affinity Designer**, **A
 
 ## Método 2: Scripts Library (guardar para reutilizar)
 
-El menú `Window > Scripting > Scripts Library` permite guardar scripts de forma permanente para ejecutarlos con un clic:
+La forma de agregar `GridBot.js` a la librería **no es usando "Import Script..."** sino arrastrando el archivo directamente sobre la ventana de Affinity:
 
-1. Ve a `Window > Scripting > Script Editor`.
-2. Pega el contenido de `GridBot.js` y haz clic en **Save As...** para guardarlo en la librería con el nombre `GridBot`.
-3. A partir de ese momento, el script aparecerá en `Window > Scripting > Scripts Library` y podrás ejecutarlo directamente desde ahí sin necesidad de pegar el código cada vez.
+1. Abre el panel `Window > Scripting > Scripts Library`.
+2. En el Finder, localiza el archivo `affinity/GridBot.js`.
+3. **Arrastra el archivo `.js` directamente sobre la ventana de Affinity** (encima del Script Editor o del panel Scripts Library).
+4. Affinity mostrará un overlay para instalarlo — confírmalo.
+5. `GridBot` aparecerá en tu librería y podrás ejecutarlo con un clic sin necesidad de pegar el código cada vez.
+
+> **Nota:** El botón "Import Script..." del menú contextual de la librería puede no aceptar `.js` directamente. El método de arrastrar y soltar es el recomendado.
 
 ---
 
