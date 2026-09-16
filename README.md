@@ -21,6 +21,7 @@ Este script surge como material y recurso didáctico del curso de Domestika:
 
 - **Generación aleatoria** de retículas a partir de divisiones geométricas.
 - **Exportación automática** en formato **.pdf** para su posterior edición o impresión.
+- **Plantillas PDF listas para usar** con diversas configuraciones de columnas y filas (formato A5).
 - **Interacción sencilla** mediante clicks del mouse.
 - Código ligero, fácil de entender y personalizar.
 
@@ -34,9 +35,16 @@ GridBot/
 │   └── GridBot/
 │       └── GridBot.pde         # Versión para Processing
 ├── illustrator/
-│   ├── GridBot.jsx             # Script para Adobe Illustrator (ExtendScript)
-│   └── install.md              # Guía de instalación (macOS y Windows)
-├── assets/                     # Muestras 
+│   ├── GridBot_v0.2.1.jsx      # Script para Adobe Illustrator (ExtendScript)
+│   └── install.md              # Guía de instalación para Illustrator
+├── affinity/
+│   ├── GridBot.js              # Script para Canva Affinity 3.3+ (JavaScript)
+│   └── install.md              # Guía de instalación y uso en Affinity
+├── pdf/
+│   ├── 3x5col_A5.pdf           # Plantilla A5 · 3 cols × 5 filas
+│   ├── 5x7col_A5.pdf           # Plantilla A5 · 5 cols × 7 filas
+│   └── 6x9col_A5.pdf           # Plantilla A5 · 6 cols × 9 filas
+├── assets/                     # Muestras
 ├── README.md                   # Documentación
 └── LICENSE                     # Licencia CC0 1.0
 ```
@@ -54,10 +62,31 @@ GridBot/
 
 ### Opción 2: Adobe Illustrator
 1. Abre tu documento en **Adobe Illustrator**.
-2. Ve al menú **Archivo > Secuencias de comandos > Otra secuencia de comandos...** (`Cmd + F12` en macOS / `Ctrl + F12` en Windows) y selecciona `illustrator/GridBot.jsx`.
+2. Ve al menú **Archivo > Secuencias de comandos > Otra secuencia de comandos...** (`Cmd + F12` en macOS / `Ctrl + F12` en Windows) y selecciona `illustrator/GridBot_v0.2.1.jsx`.
 3. *(Opcional)* Para integrarlo en el menú de Illustrator de forma permanente, consulta la [Guía de Instalación para macOS y Windows](illustrator/install.md).
 
 ![GridBot para Adobe Illustrator](assets/gridbot-ai.png)
+
+### Opción 3: Canva Affinity (v3.3+)
+1. Asegúrate de haber iniciado sesión con tu cuenta de Affinity/Canva y haber activado **"Enable Affinity Scripting"** en `Settings > Scripting` (`Cmd + ,` en macOS / `Ctrl + ,` en Windows).
+2. Abre tu documento en **Affinity Designer**, **Photo** o **Publisher**.
+3. Abre el **Script Editor** (`Window > Scripting > Script Editor` en inglés / `Ventana > Scripting > Script Editor` en español) o el **Affinity Script Manager**.
+4. Copia y pega el código de `affinity/GridBot.js` en el editor y presiona **Run** (`Cmd + Enter` / `Ctrl + Enter`).
+5. Para más detalles, consulta la [Guía de Instalación para Canva Affinity](affinity/install.md).
+
+---
+
+## Plantillas PDF
+
+La carpeta `pdf/` incluye plantillas listas para imprimir o editar, generadas con distintas configuraciones de retícula en **formato A5**:
+
+| Archivo | Columnas | Filas | Formato |
+|---|---|---|---|
+| `3x5col_A5.pdf` | 3 | 5 | A5 (148 × 210 mm) |
+| `5x7col_A5.pdf` | 5 | 7 | A5 (148 × 210 mm) |
+| `6x9col_A5.pdf` | 6 | 9 | A5 (148 × 210 mm) |
+
+Puedes usarlas directamente como base de trabajo o como referencia visual antes de ejecutar el script con tu propia configuración.
 
 ---
 
@@ -65,6 +94,7 @@ GridBot/
 
 - **Processing**: Versión 3.0 o superior (para el sketch `.pde`).
 - **Adobe Illustrator**: Compatible con cualquier versión con soporte ExtendScript/JSX.
+- **Canva Affinity**: Versión 3.2 / 3.3 o superior (sesión iniciada y opción "Enable Affinity Scripting" activada en *Settings > Scripting*).
 
 ---
 

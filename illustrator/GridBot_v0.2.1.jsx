@@ -8,9 +8,9 @@ function main() {
   };
 
   var CFG = {
-    cols: 3,
-    rows: 3,
-    count: 50,
+    cols: 5,
+    rows: 7,
+    count: 10,
     cellRange: 12,
     strokeW: 0.35,
     aiVers: parseFloat(app.version),
@@ -43,46 +43,46 @@ function main() {
   var lastLayer = null;
 
   var win = new Window('dialog', 'GridBot - Bluetypo');
-      win.alignChildren = ['fill', 'top'];
+  win.alignChildren = ['fill', 'top'];
 
   var settPnl = win.add('panel', undefined, 'Composición');
-      settPnl.alignChildren = ['fill', 'top'];
-      settPnl.margins = CFG.mgns;
+  settPnl.alignChildren = ['fill', 'top'];
+  settPnl.margins = CFG.mgns;
 
   var wrapper1 = settPnl.add('group');
-      wrapper1.alignChildren = ['left', 'center'];
+  wrapper1.alignChildren = ['left', 'center'];
   var colsLbl = wrapper1.add('statictext', undefined, 'Columnas:');
-      colsLbl.preferredSize.width = 90;
+  colsLbl.preferredSize.width = 90;
   var colsInp = wrapper1.add('edittext', undefined, CFG.cols);
-      colsInp.preferredSize.width = 60;
-      colsInp.helpTip = 'Número de columnas de la grilla (igual a "cols" en el sketch original)';
+  colsInp.preferredSize.width = 60;
+  colsInp.helpTip = 'Número de columnas de la grilla (igual a "cols" en el sketch original)';
   if (CFG.isMac || CFG.aiVers >= 26.4 || CFG.aiVers <= 17) {
     colsInp.active = true;
   }
 
   var wrapperRows = settPnl.add('group');
-      wrapperRows.alignChildren = ['left', 'center'];
+  wrapperRows.alignChildren = ['left', 'center'];
   var rowsLbl = wrapperRows.add('statictext', undefined, 'Filas:');
-      rowsLbl.preferredSize.width = 90;
+  rowsLbl.preferredSize.width = 90;
   var rowsInp = wrapperRows.add('edittext', undefined, CFG.rows);
-      rowsInp.preferredSize.width = 60;
-      rowsInp.helpTip = 'Número de filas de la grilla (junto con Columnas define la retícula)';
+  rowsInp.preferredSize.width = 60;
+  rowsInp.helpTip = 'Número de filas de la grilla (junto con Columnas define la retícula)';
 
   var wrapper2 = settPnl.add('group');
-      wrapper2.alignChildren = ['left', 'center'];
+  wrapper2.alignChildren = ['left', 'center'];
   var countLbl = wrapper2.add('statictext', undefined, 'Rectángulos:');
-      countLbl.preferredSize.width = 90;
+  countLbl.preferredSize.width = 90;
   var countInp = wrapper2.add('edittext', undefined, CFG.count);
-      countInp.preferredSize.width = 60;
-      countInp.helpTip = 'Cantidad de rectángulos por generación';
+  countInp.preferredSize.width = 60;
+  countInp.helpTip = 'Cantidad de rectángulos por generación';
 
   var wrapper3 = settPnl.add('group');
-      wrapper3.alignChildren = ['left', 'center'];
+  wrapper3.alignChildren = ['left', 'center'];
   var swLbl = wrapper3.add('statictext', undefined, 'Grosor trazo:');
-      swLbl.preferredSize.width = 90;
+  swLbl.preferredSize.width = 90;
   var swInp = wrapper3.add('edittext', undefined, CFG.strokeW + ' pt');
-      swInp.preferredSize.width = 60;
-      swInp.helpTip = 'Grosor del trazo en puntos (sin relleno, estilo boceto)';
+  swInp.preferredSize.width = 60;
+  swInp.helpTip = 'Grosor del trazo en puntos (sin relleno, estilo boceto)';
 
   var info = win.add('statictext', undefined,
     '"Generar nueva" crea una capa; "Randomize" varía la composición en esa misma capa.',
@@ -90,14 +90,14 @@ function main() {
   info.preferredSize.width = 300;
 
   var randomizeBtn = win.add('button', undefined, 'Randomize');
-      randomizeBtn.helpTip = 'Genera una nueva variación con los mismos valores del panel';
+  randomizeBtn.helpTip = 'Genera una nueva variación con los mismos valores del panel';
 
   var applyAllChk = win.add('checkbox', undefined, 'Aplicar a todas las mesas de trabajo');
-      applyAllChk.helpTip = 'Genera una composición independiente en cada mesa de trabajo del documento';
+  applyAllChk.helpTip = 'Genera una composición independiente en cada mesa de trabajo del documento';
 
   var btns = win.add('group');
-      btns.alignChildren = ['fill', 'center'];
-      btns.spacing = 10;
+  btns.alignChildren = ['fill', 'center'];
+  btns.spacing = 10;
 
   var close, gen;
   if (CFG.isMac) {
@@ -354,4 +354,4 @@ function stringify(obj) {
 
 try {
   main();
-} catch (err) {}
+} catch (err) { }
