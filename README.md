@@ -13,7 +13,7 @@ Facilita la **organización visual** y la **disposición estructurada** de eleme
 Este script surge como material y recurso didáctico del curso de Domestika:  
 - [**Diseño de carteles tipográficos experimentales**](https://www.domestika.org/es/courses/464-diseno-de-carteles-tipograficos-experimentales)
 
-[![Diseño de carteles tipográficos experimentales en Domestika](assets/domestika-curso.png)](https://www.domestika.org/es/courses/464-diseno-de-carteles-tipograficos-experimentales)
+![Diseño de carteles tipográficos experimentales en Domestika](assets/domestika-curso.png)
 
 ---
 
