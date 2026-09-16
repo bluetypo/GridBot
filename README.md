@@ -43,7 +43,8 @@ GridBot/
 ├── pdf/
 │   ├── 3x5col_A5.pdf           # Plantilla A5 · 3 cols × 5 filas
 │   ├── 5x7col_A5.pdf           # Plantilla A5 · 5 cols × 7 filas
-│   └── 6x9col_A5.pdf           # Plantilla A5 · 6 cols × 9 filas
+│   ├── 6x9col_A5.pdf           # Plantilla A5 · 6 cols × 9 filas
+│   └── GridBot_DSK.pdf         # Plantilla general de referencia
 ├── assets/                     # Muestras
 ├── README.md                   # Documentación
 └── LICENSE                     # Licencia CC0 1.0
@@ -87,6 +88,7 @@ La carpeta `pdf/` incluye plantillas listas para imprimir o editar, generadas co
 | `3x5col_A5.pdf` | 3 | 5 | A5 (148 × 210 mm) |
 | `5x7col_A5.pdf` | 5 | 7 | A5 (148 × 210 mm) |
 | `6x9col_A5.pdf` | 6 | 9 | A5 (148 × 210 mm) |
+| `GridBot_DSK.pdf` | — | — | Plantilla general de referencia |
 
 Puedes usarlas directamente como base de trabajo o como referencia visual antes de ejecutar el script con tu propia configuración.
 
