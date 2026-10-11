@@ -15,8 +15,8 @@ const DEFAULT_CONFIG = {
   cols:        5,
   rows:        7,
   count:       10,
-  strokeWidth: 0.35,
-  strokeColor: { r: 0, g: 0, b: 0, a: 255 },
+  strokeWidth: 2,
+  strokeColor: { r: 255, g: 255, b: 255, a: 255 },
   applyAll:    false,
   facingPages: false  // Override: forzar 2 páginas por spread cuando todos son facing
 };
